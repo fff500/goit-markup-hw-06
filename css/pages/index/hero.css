@@ -37,7 +37,9 @@
   }
 }
 
-@media screen and (min-resolution: 192dpi) {
+@media screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx),
+screen and (min-device-pixel-ratio: 2) {
   .hero-section {
     background-image:
       linear-gradient(rgba(46, 47, 66, .7), rgba(46, 47, 66, .7)),
