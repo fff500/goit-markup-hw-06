@@ -1,0 +1,30 @@
+@media screen and (max-width: 767px) {
+  .products-section {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1167px) {
+  .products-section {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1168px) {
+  .products-section {
+    padding-bottom: 120px;
+  }
+
+  .products-section-title {
+    margin-bottom: 72px;
+  }
+
+  .products-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .products-item {
+    flex-basis: calc((100% - 24px * 2) / 3);
+  }
+}

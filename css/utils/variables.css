@@ -1,0 +1,20 @@
+:root {
+  --body-bg: #ffffff;
+  --titles-font-family: 'Roboto', sans-serif;
+  --titles-color: #2e2f42;
+  --text-font-family: 'Roboto', sans-serif;
+  --text-color: #434455;
+  --anamation-pattern: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ========== Colors ========== */
+  --color-brand: #4d5ae5;
+  --color-dark: #2e2f42;
+  --color-white: #ffffff;
+  --color-light: #f4f4fd;
+  --color-active: #404bbf;
+  --color-accent: #e7e9fc;
+  --color-green: #31d0aa;
+  --color-light-slate: #8e8f99;
+  --color-dairy: #fcfcfc;
+  --color-slate: #434455;
+}

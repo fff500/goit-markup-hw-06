@@ -1,0 +1,98 @@
+.portfolio-section {
+  padding: 96px 0 120px 0;
+}
+
+.filter-controls {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 0 auto 72px;
+}
+
+.filter-button {
+  padding: 12px 24px;
+  color: var(--color-brand);
+  background-color: var(--color-light);
+  border: 1px solid var(--color-accent);
+  transition: color var(--anamation-pattern),
+    background-color var(--anamation-pattern),
+    border-color var(--anamation-pattern),
+    box-shadow var(--anamation-pattern);
+}
+
+.filter-button:hover,
+.filter-button:focus,
+.filter-button:active {
+  color: var(--color-white);
+  background-color: var(--color-active);
+  border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-item {
+  flex-basis: calc((100% - 24px * 2) / 3);
+}
+
+.portfolio-item-link {
+  display: block;
+  transition: box-shadow var(--anamation-pattern);
+}
+
+.portfolio-item-link:hover,
+.portfolio-item-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item .image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item .shade-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: var(--color-light);
+  background-color: var(--color-brand);
+  transform: translateY(100%);
+  transition: transform var(--anamation-pattern);
+}
+
+.portfolio-item-link:hover .shade-text,
+.portfolio-item-link:focus .shade-text {
+  transform: translateY(0);
+}
+
+.portfolio-item .text-wrapper {
+  padding: 32px 16px;
+  border: 1px solid var(--color-accent);
+  border-top: none;
+}
+
+.portfolio-item-title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--titles-color);
+}
+
+.portfolio-category {
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
